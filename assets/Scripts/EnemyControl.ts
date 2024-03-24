@@ -10,8 +10,6 @@ export class EnemyControl extends Component {
   move(dt: number) {
     let p = this.node.getPosition();
     p.y -= this.speed * dt;
-    // 移动
-
     if (!this.isDie) {
       this.node.setPosition(p.x, p.y);
     }
@@ -30,7 +28,7 @@ export class EnemyControl extends Component {
     resources.load(
       "enemy0_die/spriteFrame",
       SpriteFrame,
-      (err, spriteFrame) => {
+      (_err, spriteFrame) => {
         this.node.getComponent(Sprite).spriteFrame = spriteFrame;
       }
     );

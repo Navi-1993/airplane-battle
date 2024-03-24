@@ -8,7 +8,6 @@ export class BulletControl extends Component {
   private speed = 800;
 
   protected start(): void {
-    const colider = this.node.getComponent(Collider2D);
     let collider = this.getComponent(Collider2D);
     if (collider) {
       collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
