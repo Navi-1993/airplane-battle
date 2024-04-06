@@ -3,7 +3,7 @@
   "uuid": "29a8dcc9-b31d-408c-b213-6d0718c144d6",
   "version": "3.6.2",
   "creator": {
-    "version": "3.6.2"
+    "version": "3.8.2"
   },
   "dependencies": {
     "lodash-es": "^4.17.21"
